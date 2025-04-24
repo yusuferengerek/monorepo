@@ -1,0 +1,32 @@
+{
+  "name": "monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "src/frontend",
+    "src/backend",
+    "src/firewall"
+  ],
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js",
+    "build": "npm install --workspaces && npm --workspace src/frontend run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yusuferengerek/monorepo.git"
+  },
+  "keywords": [
+    "monorepo"
+  ],
+  "author": "Yusuf Eren Gerek",
+  "description": "A secure and scalable monorepo architecture for full-stack web applications with integrated firewall protection and API gateway.",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "pidusage": "^4.0.0"
+  }
+}

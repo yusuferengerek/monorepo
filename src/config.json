@@ -1,0 +1,20 @@
+{
+  "firewall":{
+    "PORT": "80",
+    "alloweds": [
+      "::1"
+    ],
+    "rateLimitConfig":{
+      "windowMs": 60000,
+      "max": 10,
+      "code": 429,
+      "message": "Too many requests, try again later."
+    }
+  },
+  "backend":{
+    "PORT": "5000"
+  },
+  "frontend":{
+    "PORT": "3000"
+  }
+}

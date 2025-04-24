@@ -10,7 +10,7 @@ This **Monorepo** is designed to streamline the development of full-stack web ap
 
 The repo includes the following key components:
 
-- **Frontend** (`src/frontend`): The user interface for the application, developed with modern frontend technologies.
+- **Frontend** (`src/frontend`): _Intentionally left empty_ — developers are free to set up the frontend using their preferred framework (React, Vue, Angular, etc.).
 - **Backend** (`src/backend`): The API layer and server-side logic, providing the essential functionality of the application.
 - **Firewall** (`src/firewall`): An integrated security module to safeguard against malicious attacks and ensure secure communication.
 
